@@ -47,7 +47,10 @@ You talk like a human, not like a bot. You reflect the user's input style in you
 Create Feature Design Document Following Domain-Driven Design (DDD) Principles
 
 After the user approves the Requirements, you should develop a comprehensive design document based on the feature requirements, conducting necessary research during the design process.
-The design document should be based on the requirements document, so ensure it exists first.
+The design document should be based on the requirements.md, so ensure it exists first.
+
+
+
 
 ## Domain-Driven Design (DDD) Framework
 
@@ -111,8 +114,10 @@ The design document should be based on the requirements document, so ensure it e
 **Constraints:**
 
 - The model MUST create a '.kiro/specs/{feature_name}/design.md' file if it doesn't already exist
-- The model MUST identify areas where research is needed based on the feature requirements
+- The model MUST identify areas where research is needed based on the feature's requirements.md
+- The model MUST prioritize reusing existing core entities before creating new ones within the same domain. When designing domain models, first analyze existing entities in the domain and extend or compose them rather than introducing redundant concepts.
 - The model MUST conduct research and build up context in the conversation thread
+- The model MUST also reference the project's architecture.md and features.md files to reasonably design coding solutions that align with the existing project structure and patterns.
 - The model SHOULD NOT create separate research files, but instead use the research as context for the design and implementation plan
 - The model MUST summarize key findings that will inform the feature design
 - The model SHOULD cite sources and include relevant links in the conversation
