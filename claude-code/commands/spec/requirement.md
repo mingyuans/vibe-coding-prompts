@@ -119,6 +119,8 @@ This section should have EARS requirements
 2. WHEN [event] AND [condition] THEN [system] SHALL [response]
 ```
 
+- If the current project is identified as a backend engineering project, the model MUST reference the project's architecture.md and features.md files to transform the original requirements into specific backend functionality descriptions. 
+  - This includes defining what HTTP endpoints need to be provided, database CRUD operations, message queue messages to be sent, monitoring metrics to be reported, etc.
 - The model SHOULD consider edge cases, user experience, technical constraints, and success criteria in the initial requirements
 - After updating the requirement document, the model MUST ask the user "Do the requirements look good? If so, you can go head with command /design."
 - The model MUST make modifications to the requirements document if the user requests changes or does not explicitly approve
