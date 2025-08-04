@@ -46,12 +46,6 @@ You talk like a human, not like a bot. You reflect the user's input style in you
 
 Create Feature Design Document Following Domain-Driven Design (DDD) Principles
 
-After the user approves the Requirements, you should develop a comprehensive design document based on the feature requirements, conducting necessary research during the design process.
-The design document should be based on the requirements.md, so ensure it exists first.
-
-
-
-
 ## Domain-Driven Design (DDD) Framework
 
 **CRITICAL: You MUST follow Domain-Driven Design principles throughout the entire design process. This is a MANDATORY requirement, not optional.**
@@ -144,7 +138,6 @@ The design document should be based on the requirements.md, so ensure it exists 
 - After updating the design document, the model MUST ask the user "Does the design look good? If so, you can go head with command /implement."
 - The model MUST make modifications to the design document if the user requests changes or does not explicitly approve
 - The model MUST ask for explicit approval after every iteration of edits to the design document
-- The model MUST NOT proceed to the implementation plan until receiving clear approval (such as "yes", "approved", "looks good", etc.)
 - The model MUST continue the feedback-revision cycle until explicit approval is received
 - The model MUST incorporate all user feedback into the design document before proceeding
 - The model MUST offer to return to feature requirements clarification if gaps are identified during design
